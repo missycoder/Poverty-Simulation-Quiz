@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poverty Simulation Quiz</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-m1iGV3XERaXf5zstIJ1SowOqwqN+uMQn5z6Vf4t7A4o0mIusyFcGQdJm8C7mRQFo" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sticky-top bg-white">
+            <h1 class="text-center my-3">Poverty Simulation Quiz</h1>
+        </div>
+        <form id="quiz-form">
+            <div id="questions">
+                <div class="question" id="question1">
+                    <h3>Question 1: What percentage of income do the top 10% of Singaporeans earn?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                        <label class="form-check-label" for="q1a">a. 20%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                        <label class="form-check-label" for="q1b">b. 43%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q1" id="q1c" value="c">
+                        <label class="form-check-label" for="q1c">c. 70%</label>
+                    </div>
+                </div>
+                <div class="question" id="question2">
+                    <h3>Question 2: What are the main factors contributing to the high income inequality in Singapore?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q2" id="q2a" value="a">
+                        <label class="form-check-label" for="q2a">a. Limited government policies</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q2" id="q2b" value="b">
+                        <label class="form-check-label" for="q2b">b. Structural factors like globalization</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q2" id="q2c" value="c">
+                        <label class="form-check-label" for="q2c">c. Cultural factors</label>
+                    </div>
+                </div>
+                <div class="question" id="question3">
+                    <h3>Question 3: What percentage of Singaporeans live in rental HDB flats?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                        <label class="form-check-label" for="q3a">a. About 10%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                        <label class="form-check-label" for="q3b">b. About 80%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q3" id="q3c" value="c">
+                        <label class="form-check-label" for="q3c">c. Less than 1%</label>
+                    </div>
+                </div>
+                <div class="question" id="question4">
+                    <h3>Question 4: What is the average rental cost for a 3-room HDB flat in Singapore?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                        <label class="form-check-label" for="q4a">a. Around $400 to $600 per month</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                        <label class="form-check-label" for="q4b">b. Around $1500 to $2000 per month</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q4" id="q4c" value="c">
+                        <label class="form-check-label" for="q4c">c. Around $3000 to $4000 per month</label>
+                    </div>
+                </div>
+                <div class="question" id="question5">
+                    <h3>Question 5: How do families in rental HDB flats typically pay their monthly utility bills?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q5" id="q5a" value="a">
+                        <label class="form-check-label" for="q5a">a. By direct debit from their bank account</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q5" id="q5b" value="b">
+                        <label class="form-check-label" for="q5b">b. By cash at the post office</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q5" id="q5c" value="c">
+                        <label class="form-check-label" for="q5c">c. By visiting the HDB branch office</label>
+                    </div>
+                </div>
+                <div class="question" id="question6">
+                    <h3>Question 6: What percentage of young children living in rental HDB flats are Singaporeans?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                        <label class="form-check-label" for="q6a">a. About 80%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                        <label class="form-check-label" for="q6b">b. Less than 10%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q6" id="q6c" value="c">
+                        <label class="form-check-label" for="q6c">c. About 50%</label>
+                    </div>
+                </div>
+                <div class="question" id="question7">
+                    <h3>Question 7: What are some challenges faced by low-income families in accessing quality education for their children?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q7" id="q7a" value="a">
+                        <label class="form-check-label" for="q7a">a. Limited access to enrichment programs and educational resources</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q7" id="q7b" value="b">
+                        <label class="form-check-label" for="q7b">b. High cost of tuition and extracurricular activities</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q7" id="q7c" value="c">
+                        <label class="form-check-label" for="q7c">c. Social stigma and discrimination</label>
+                    </div>
+                </div>
+                <div class="question" id="question8">
+                    <h3>Question 8: What is the average monthly household income for low-income families in Singapore?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                        <label class="form-check-label" for="q8a">a. Less than $1,500</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                        <label class="form-check-label" for="q8b">b. Around $3,000 to $4,000</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q8" id="q8c" value="c">
+                        <label class="form-check-label" for="q8c">c. Over $6,000</label>
+                    </div>
+                </div>
+                <div class="question" id="question9">
+                    <h3>Question 9: What percentage of low-income families in Singapore live in overcrowded conditions?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9a" value="a">
+                        <label class="form-check-label" for="q9a">a. About 10%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9b" value="b">
+                        <label class="form-check-label" for="q9b">b. About 50%</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q9" id="q9c" value="c">
+                        <label class="form-check-label" for="q9c">c. About 80%</label>
+                    </div>
+                </div>
+                <div class="question" id="question10">
+                    <h3>Question 10: What are some common challenges faced by families living in rental HDB flats?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q10" id="q10a" value="a">
+                        <label class="form-check-label" for="q10a">a. Limited access to social support services</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q10" id="q10b" value="b">
+                        <label class="form-check-label" for="q10b">b. Higher rent and utility costs</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q10" id="q10c" value="c">
+                        <label class="form-check-label" for="q10c">c. Difficulty in obtaining a mortgage</label>
+                    </div>
+                </div>
+                <div class="question" id="question11">
+                    <h3>Question 11: What challenges might a low-income family face if one spouse is a Singaporean citizen and the other is a foreigner, staying in a rental HDB flat with young children?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q11" id="q11a" value="a">
+                        <label class="form-check-label" for="q11a">a. Difficulty in accessing social support services due to mixed citizenship status</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q11" id="q11b" value="b">
+                        <label class="form-check-label" for="q11b">b. Legal and immigration issues affecting the foreign spouse's right to reside in Singapore</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q11" id="q11c" value="c">
+                        <label class="form-check-label" for="q11c">c. Financial strain due to differing wage levels and job opportunities between the two spouses</label>
+                    </div>
+                </div>
+                <div class="question" id="question12">
+                    <h3>Question 12: How do rental HDB flats contribute to the housing needs of low-income families?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" id="q12a" value="a">
+                        <label class="form-check-label" for="q12a">a. By providing affordable housing options</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" id="q12b" value="b">
+                        <label class="form-check-label" for="q12b">b. By giving priority to low-income applicants</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="q12" id="q12c" value="c">
+                        <label class="form-check-label" for="q12c">c. By offering a variety of unit sizes and rental rates</label>
+                    </div>
+                </div>
+                <div class="question" id="question13">
+                    <h3>Question 13: How does the government support low-income families living in rental HDB flats?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q13" id="q13a" value="a">
+                        <label class="form-check-label" for="q13a">a. By offering financial assistance schemes</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q13" id="q13b" value="b">
+                        <label class="form-check-label" for="q13b">b. By providing access to education and healthcare services</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q13" id="q13c" value="c">
+                        <label class="form-check-label" for="q13c">c. By ensuring equal job opportunities for all</label>
+                    </div>
+                </div>
+                <div class="question" id="question14">
+                    <h3>Question 14: How do families in rental HDB flats deal with maintenance issues?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q14" id="q14a" value="a">
+                        <label class="form-check-label" for="q14a">a. By reporting issues to the HDB office</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q14" id="q14b" value="b">
+                        <label class="form-check-label" for="q14b">b. By seeking assistance from the town council</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q14" id="q14c" value="c">
+                        <label class="form-check-label" for="q14c">c. By arranging for repairs independently</label>
+                    </div>
+                </div>
+                <div class="question" id="question15">
+                    <h3>Question 15: What are some social stigmas associated with living in rental HDB flats?</h3>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q15" id="q15a" value="a">
+                        <label class="form-check-label" for="q15a">a. Perceived as a symbol of failure or poverty</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q15" id="q15b" value="b">
+                        <label class="form-check-label" for="q15b">b. Seen as less desirable living spaces</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="q15" id="q15c" value="c">
+                        <label class="form-check-label" for="q15c">c. Some people believe only irresponsible families live in rental flats</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+        </form>
+        <button id="backToTop" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-3" style="display:none;"><i class="fas fa-arrow-up"></i></button>
+       <!-- Add an empty div to display the quiz result -->
+        <div id="result"></div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha384-+LJVfIluVvO0nIOn4blX8F4gt0O4+FXqF91B9I1zTprQq+8HpIzHuK58fP9Ae6fP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

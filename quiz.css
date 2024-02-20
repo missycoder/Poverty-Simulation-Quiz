@@ -1,0 +1,129 @@
+body {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #dee2e6;
+}
+
+.option {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #dee2e6;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #adb5bd;
+}
+
+.active {
+    background-color: #adb5bd;
+}
+
+.result {
+    margin-top: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal .modal-content {
+    background-color: #dee2e6;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+.btn {
+    background-color: #343a40;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #212529;
+}
+
+@keyframes glowing {
+    0% { box-shadow: 0 0 3px #ffffff; }
+    50% { box-shadow: 0 0 10px #800080; }
+    100% { box-shadow: 0 0 3px #ffffff; }
+  }
+  
+  .btn-primary {
+      background: linear-gradient(to right, #800080, #ff007f);
+      border: none;
+      padding: 10px 20px;
+      color: white;
+      font-size: 18px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      animation: glowing 1s infinite;
+  }
+  
+  .btn-primary:hover {
+      background-color: #800080;
+  }
+  
+
+
+.form-control {
+    background-color: #dee2e6;
+}
+
+.form-control:focus {
+    background-color: #cfd3d6;
+    box-shadow: none;
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Sticky Header */
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    background-color: #ffffff;
+}
+
+/* Questions and Answers */
+.question {
+    margin-bottom: 20px;
+}
+
+/* Back to Top Button */
+#backToTop {
+    display: block;
+}
